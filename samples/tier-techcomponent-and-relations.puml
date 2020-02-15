@@ -1,0 +1,16 @@
+@startuml
+!includeurl ../C4_arch_template.puml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+Tier(tier1, "Tier 1") {
+    Tech_Component(springMvc, "Spring MVC", "Service Activation")
+    Tech_Component(springBoot, "Spring Boot", "Service Implementation")
+}
+Tier(tier2, "Tier 2") {
+    Tech_Component_Db(mongoDB, "MongoDB", "DocumentStore")
+}
+System_Ext(ext, "External Service")
+
+Rel(ext,springMvc, "[REST/HTTPS]")
+Rel(springMvc, mongoDB, "[REST/HTTPS]")
+
+@enduml

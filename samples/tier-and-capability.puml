@@ -1,0 +1,11 @@
+@startuml
+!includeurl ../C4_arch_template.puml
+
+' LAYOUT_AS_SKETCH()
+' LAYOUT_TOP_DOWN
+
+Tier(tier, "Tier") {
+    Capability(dataAggregation, "Data Aggregation")
+}
+
+@enduml

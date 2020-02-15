@@ -1,0 +1,26 @@
+@startuml
+!includeurl ../C4_arch_template.puml
+
+' LAYOUT_AS_SKETCH()
+
+Tier(first, "First") {
+}
+
+Tier(second, "Second") {
+}
+
+Tier(third, "Third") {
+}
+
+Tier(fourth, "Fourth") {
+}
+Tier(fifth, "Fifth") {
+}
+
+
+first-[hidden]-second
+second-[hidden]-third
+third-[hidden]-fourth
+fourth-[hidden]fifth
+
+@enduml

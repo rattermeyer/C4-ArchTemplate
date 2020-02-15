@@ -1,0 +1,7 @@
+@startuml
+!includeurl ../C4_arch_template.puml
+
+Tier(tier, "Tier") {
+    Tech_Component(springMvc, "Spring MVC", "Service Activation")
+}
+@enduml
