@@ -1,0 +1,32 @@
+@startuml
+!includeurl ../C4_arch_template.puml
+
+' LAYOUT_AS_SKETCH()
+' LAYOUT_TOP_DOWN
+
+Tier(tier, "Tier") {
+    Capability(monitoring, "Monitoring")
+}
+
+Domain(dom1, "Monitoring") {
+    Capability(serviceMonitoring, "Service Monitoring")
+    Capability(hostMonitoring, "Host Monitoring")
+}
+
+Tier(tier2, "Tier2") {
+    Domain(dom2, "dom2"){
+    }
+}
+
+Domain(dom3, "dom3"){
+   Tier(tier3, "Tier3") {
+   }
+}
+
+Domain(dom4, "dom4"){
+   Domain(dom5, "dom5"){
+      Capability(cap1, "cap1")
+   }
+}
+
+@enduml

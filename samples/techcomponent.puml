@@ -1,5 +1,5 @@
 @startuml
-!includeurl ../C4_arch_template.puml
+!include ../C4_arch_template.puml
 
 Tech_Component(springMvc, "Spring MVC", "Service Activation")
 Tech_Component_Db(postgres, "PostgreSQL")
