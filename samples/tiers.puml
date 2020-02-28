@@ -18,7 +18,7 @@ Tier(fifth, "Fifth") {
 }
 
 
-first-[hidden]-second
+Rel_Down(first,second,"consumes", "REST/HTTP")
 second-[hidden]-third
 third-[hidden]-fourth
 fourth-[hidden]fifth
