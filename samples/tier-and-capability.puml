@@ -5,7 +5,15 @@
 ' LAYOUT_TOP_DOWN
 
 Tier(tier, "Tier") {
-    Capability(dataAggregation, "Data Aggregation")
+    Capability(monitoring, "Monitoring")
 }
+
+Domain(dom1, "Monitoring") {
+    Capability(serviceMonitoring, "Service Monitoring")
+    Capability(hostMonitoring, "Host Monitoring")
+}
+
+Lay_D(tier,dom1)
+Rel_D(monitoring,dom1, "delegates to")
 
 @enduml
