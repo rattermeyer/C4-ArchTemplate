@@ -1,0 +1,61 @@
+= C4-arch-template
+
+C4 compatible macros extensions
+
+== Examples
+
+[source]
+----
+include::samples/techcomponent.puml[]
+----
+
+Will produce
+
+image::samples/techcomponent.png[]
+
+[source]
+----
+include::samples/tier-and-capability.puml[]
+----
+
+Will produce
+
+image::samples/tier-and-capability.png[]
+
+
+[source]
+----
+include::samples/tier-and-techcomponent.puml[]
+----
+
+Will produce
+
+image::samples/tier-and-techcomponent.png[]
+
+
+[source]
+----
+include::samples/tier-domain-nested.puml[]
+----
+
+Will produce
+
+image::samples/tier-domain-nested.png[]
+
+[source]
+----
+include::samples/tier-techcomponent-and-relations.puml[]
+----
+
+Will produce
+
+image::samples/tier-techcomponent-and-relations.png[]
+
+[source]
+----
+include::samples/tiers.puml[]
+----
+
+Will produce
+
+image::samples/tiers.png[]
