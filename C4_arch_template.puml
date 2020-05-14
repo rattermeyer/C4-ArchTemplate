@@ -59,7 +59,7 @@ skinparam rectangle<<capability>> {
     StereotypeFontColor ELEMENT_FONT_COLOR_BLACK
     FontColor ELEMENT_FONT_COLOR_BLACK
     BackgroundColor CAPABILITY_BG_COLOR
-    BorderColor CAPABILITY_BG_COLOR
+    BorderColor #a3a3a3
 }
 
 skinparam rectangle<<domain>> {
