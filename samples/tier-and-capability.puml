@@ -11,6 +11,7 @@ Tier(tier, "Tier") {
 Domain(dom1, "Monitoring") {
     Capability(serviceMonitoring, "Service Monitoring")
     Capability(hostMonitoring, "Host Monitoring")
+    Capability(hostMonitoring, "Host Monitoring", "Ability to gather time series data")
 }
 
 Lay_D(tier,dom1)

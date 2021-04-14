@@ -102,6 +102,7 @@ center footer <font color=red>Warning:</font> Created for internal use, needs to
 ' ##################################
 
 !define Capability(e_alias, e_label) rectangle "==e_label  \n" <<capability>> as e_alias
+!define Capability(e_alias, e_label, e_descr) rectangle "==e_label  \n \n e_descr" <<capability>> as e_alias
 !define Capability_Alias(e_alias, e_label) rectangle "==e_label  \n" <<capability>> as e_alias
 
 !define Tech_Component(e_alias, e_label) rectangle "==e_label\n" <<technical>> as e_alias
