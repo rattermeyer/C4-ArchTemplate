@@ -1,7 +1,11 @@
 @startuml
 !include ../C4_arch_template.puml
 
+
 Tech_Component(springMvc, "Spring MVC", "Service Activation")
+
+Tech_Component_Ext(springMvc, "Spring MVC", "Service Activation")
 Tech_Component_Db(postgres, "PostgreSQL")
 Tech_Component_Db(postgres2, "PostgreSQL", "RDBMS")
+
 @enduml

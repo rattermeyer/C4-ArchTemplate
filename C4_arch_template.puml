@@ -9,7 +9,11 @@
 !define CAPABILITY_BG_COLOR #E5E2E2
 !define DOMAIN_BG_COLOR #FFFFF
 !define COMPONENT_BG_COLOR #85BBF0
+!define COMPONENT_BORDER_COLOR #78A8D8
 !define NESTED_STEREOTYPE_FONT_SIZE 8
+!define EXTERNAL_COMPONENT_BG_COLOR  #CCCCCC
+!define EXTERNAL_COMPONENT_BORDER_COLOR #BFBFBF
+
 
 
 ' Styling
@@ -76,14 +80,21 @@ skinparam rectangle<<technical>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor #000000
     BackgroundColor COMPONENT_BG_COLOR
-    BorderColor #78A8D8
+    BorderColor COMPONENT_BORDER_COLOR
+}
+
+skinparam rectangle<<technical-ext>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor #000000
+    BackgroundColor EXTERNAL_COMPONENT_BG_COLOR
+    BorderColor EXTERNAL_COMPONENT_BORDER_COLOR
 }
 
 skinparam database<<technical>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor #000000
     BackgroundColor COMPONENT_BG_COLOR
-    BorderColor #78A8D8
+    BorderColor COMPONENT_BORDER_COLOR
 }
 
 ' Layout
@@ -107,6 +118,9 @@ center footer <font color=red>Warning:</font> Created for internal use, needs to
 
 !define Tech_Component(e_alias, e_label) rectangle "==e_label\n" <<technical>> as e_alias
 !define Tech_Component(e_alias, e_label, e_techn) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_techn]</size>" <<technical>> as e_alias
+
+!define Tech_Component_Ext(e_alias, e_label) rectangle "==e_label\n" <<technical-ext>> as e_alias
+!define Tech_Component_Ext(e_alias, e_label, e_techn) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_techn]</size>" <<technical-ext>> as e_alias
 
 !define Tech_Component_Db(e_alias, e_label) database "==e_label\n" <<technical>> as e_alias
 !define Tech_Component_Db(e_alias, e_label, e_techn) database "==e_label\n<size:TECHN_FONT_SIZE>[e_techn]</size>" <<technical>> as e_alias
